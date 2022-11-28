@@ -33,15 +33,12 @@ body{
 }
 form .row{
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   flex-direction: column;
 }
 form .row label{
   font-size: 18px;
   margin-bottom: 5px;
-}
-form .row:nth-child(2) label{
-  font-size: 17px;
 }
 form :where(textarea, select, button){
   outline: none;
@@ -94,12 +91,5 @@ form button{
   transition: 0.3s ease;
 }
 form button:hover{
-  background: #4534fe;
-}
-
-@media(max-width: 400px){
-  .wrapper{
-    max-width: 345px;
-    width: 100%;
-  }
+  background: #fe344f;
 }
