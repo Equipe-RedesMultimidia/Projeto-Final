@@ -33,7 +33,7 @@ body{
 }
 form .row{
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   flex-direction: column;
 }
 form .row label{
@@ -54,16 +54,26 @@ form .row textarea{
   padding: 8px 10px;
   border: 1px solid #999;
 }
+/*SCROLLBAR É O NEGÓCIO PRA ROLAR O TEXTA AREA*/
 form .row textarea::-webkit-scrollbar{
-  width: 0px;
+  width: 10px;
 }
-form .row .outer{
+form .row textarea::-webkit-scrollbar-track{
+  background: hsl(120 75% 50% / 1);
+}
+form .row textarea::-webkit-scrollbar-thumb{
+  background: hsl(120 100% 20% / 1);
+}
+form .row textarea::-webkit-scrollbar-thumb:hover{
+  background: hsl(120 75% 10% / 1);
+}
+form .outer{
   height: 47px;
   display: flex;
-  padding: 0 10px;
   align-items: center;
   border-radius: 5px;
   justify-content: center;
+  padding: 0 10px;
   border: 1px solid #999;
 }
 form .row select{
