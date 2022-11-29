@@ -60,9 +60,12 @@ form .row textarea::-webkit-scrollbar{
 }
 form .row textarea::-webkit-scrollbar-track{
   background: hsl(120 75% 50% / 1);
+  border-radius: 100vw;
 }
 form .row textarea::-webkit-scrollbar-thumb{
   background: hsl(120 100% 20% / 1);
+  border-radius: 100vw;
+  border: .10em solid hsl(120 75% 50% / 1);
 }
 form .row textarea::-webkit-scrollbar-thumb:hover{
   background: hsl(120 75% 10% / 1);
