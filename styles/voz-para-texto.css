@@ -6,11 +6,19 @@
   font-family: 'Work Sans', sans-serif;;
 }
 body{
-  display: flex;
+  display: grid;
+  grid-template-rows: 20vh 80vh;
+  align-items: center;
+  background: #2184cf;
+}
+.topbar {
+  display: grid;
+  margin-left: 20px;
+}
+.meio {
+  display: grid;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  background: #2184cf;
 }
 .container{
   width: 370px;
