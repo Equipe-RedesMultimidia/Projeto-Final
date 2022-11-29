@@ -79,3 +79,19 @@ form button{
 form button:hover{
   background: #000000;
 }
+
+.botao-voltar button{
+  border: none;
+  border-radius: 5px;
+  height: 52px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  width: 20vw;
+  margin-top: 10px;
+  background: #000000;
+  transition: 0.3s ease;
+}
+.botao-voltar button:hover{
+  background: #b60404;
+}
