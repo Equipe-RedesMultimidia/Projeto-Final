@@ -50,6 +50,7 @@ form .campo textarea{
   padding: 8px 10px;
   border: 1px solid #999;
 }
+/*
 form .campo textarea::-webkit-scrollbar{
   width: 10px;
 }
@@ -64,19 +65,8 @@ form .campo textarea::-webkit-scrollbar-thumb{
 }
 form .campo textarea::-webkit-scrollbar-thumb:hover{
   background: #000000;
-}
-form .seletor{
-  height: 47px;
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
-  justify-content: center;
-  padding: 0 10px;
-  border: 1px solid #999;
-}
-form .campo select{
-  font-size: 14px;
-}
+}*/
+
 form button{
   height: 52px;
   color: #fff;

@@ -4,7 +4,7 @@ var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecogniti
 var recognition = new SpeechRecognition();
 speak.addEventListener('click', function () {
     recognition.start();
-    textarea.innerHTML = '...speaking';
+    textarea.innerHTML = 'ouvindo...';
 })
 recognition.onresult = function (e) {
     var transcript = e.results[0][0].transcript;
