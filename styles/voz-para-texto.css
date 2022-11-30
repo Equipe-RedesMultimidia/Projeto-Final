@@ -52,17 +52,3 @@ form button:hover{
   background: #000000;
 }
 
-.botao-voltar button{
-  border: none;
-  border-radius: 5px;
-  height: 52px;
-  color: #fff;
-  cursor: pointer;
-  width: 20vw;
-  margin-left: 20px;
-  background: #b60404;
-  transition: 0.3s ease;
-}
-.botao-voltar button:hover{
-  background: #2184cf;
-}

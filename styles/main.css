@@ -67,16 +67,16 @@ button:hover{
   border-radius: 5px;
   height: 52px;
   color: #fff;
-  font-size: 17px;
   cursor: pointer;
   width: 20vw;
-  margin-top: 10px;
-  background: #000000;
+  margin-left: 20px;
+  background: #b60404;
   transition: 0.3s ease;
 }
 .botao-voltar button:hover{
-  background: #b60404;
+  background: #2184cf;
 }
+
 .rodape {
     font-size: 1.3rem;
     margin: 2rem;
