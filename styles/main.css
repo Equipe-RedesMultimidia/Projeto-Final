@@ -7,26 +7,36 @@
 }
 body{
   display: grid;
+  grid-template-rows: 10vh 80vh 10vh;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
   background: #2184cf;
 }
+.topbar {
+  display: grid;
+  grid-template-columns: 25% 50%;
+  font-family: 'Work Sans', sans-serif;
+  color: white;
+  height: 100%;
+  background-color: #000000;
+}
+.meio {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
 .container{
-  width: 400px;
+  width: 370px;
   padding: 25px 30px;
   border-radius: 7px;
   background: #fff;
   box-shadow: 7px 7px 20px rgba(0,0,0,0.05);
 }
-.container header{ 
+header{ 
   font-size: 28px;
   font-weight: 500;
   text-align: center;
-}
-.container {
-  margin: 35px 0 20px;
-  align-content: center;
+  align-self: center;
+  justify-self: center;
 }
 .campo{
   display: flex;
@@ -51,6 +61,21 @@ button{
 }
 button:hover{
   background: #000000;
+}
+.botao-voltar button{
+  border: none;
+  border-radius: 5px;
+  height: 52px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  width: 20vw;
+  margin-top: 10px;
+  background: #000000;
+  transition: 0.3s ease;
+}
+.botao-voltar button:hover{
+  background: #b60404;
 }
 .rodape {
     font-size: 1.3rem;
