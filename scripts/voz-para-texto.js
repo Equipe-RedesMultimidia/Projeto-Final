@@ -1,9 +1,10 @@
-var speak = document.getElementById('speak');
-var textarea = document.getElementById('textarea');
+var speak = document.querySelector("#speak");
+var textarea = document.querySelector("#textarea");
+
 var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 var recognition = new SpeechRecognition();
 
-speak.addEventListener('click', function () {
+speak.addEventListener('click', () => {
     recognition.start();
     textarea.innerHTML = 'ouvindo...';
 })
