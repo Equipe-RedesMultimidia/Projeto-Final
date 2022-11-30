@@ -1,8 +1,8 @@
-const textarea = document.querySelector("textarea"),
-voiceList = document.querySelector("select"),
-speechBtn = document.querySelector("button");
+const textarea = document.querySelector("textarea");
+voiceList = document.querySelector("select");
+speechBtn = document.querySelector(".botao-conversor");
 
-let synth = speechSynthesis,
+let synth = speechSynthesis;
 isSpeaking = true;
 
 voices();
@@ -48,7 +48,7 @@ speechBtn.addEventListener("click", e =>{
             }else{
                 synth.pause();
                 isSpeaking = true;
-                speechBtn.innerText = "Resume Speech";
+                speechBtn.innerText = "Resumo";
             }
         }else{
             speechBtn.innerText = "Converter para Voz";
