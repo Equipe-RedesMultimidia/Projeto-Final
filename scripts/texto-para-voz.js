@@ -9,7 +9,13 @@ voices();
 
 function voices(){
     for(let voice of synth.getVoices()){
-        let selected = voice.name === "Google português do Brasil" ? "selected" : "";
+        /*if(voice.name == "Google português do Brasil" ){
+            let selected = "selected"
+        } else{
+            let selected = "selected"
+        }*/
+
+        let selected = voice.name.match(/.*português do Brasil.*/) ? "selected" : "";
         let option = `<option value="${voice.name}" ${selected}>${voice.name} (${voice.lang})</option>`;
         voiceList.insertAdjacentHTML("beforeend", option);
     }
