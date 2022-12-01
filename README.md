@@ -1,3 +1,5 @@
+:construction: Projeto em construção :construction:
+
 # Projeto final da Disciplina de Redes Multimídia cursada no período 2022.4.
 <p align="center">
   <img src="https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript" />
@@ -7,7 +9,6 @@
   <img src="https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat&logo=visual-studio-code&logoColor=007ACC" />
 </p>
 
-> :construction: Projeto em construção :construction:
 
 TEMA: Aplicações de Conversão de Voz para Texto e Texto para Voz
 
