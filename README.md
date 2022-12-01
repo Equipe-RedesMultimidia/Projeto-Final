@@ -1,5 +1,6 @@
-:construction: Projeto em construção :construction:
-
+<p align="center">
+  :construction: Projeto em construção :construction:
+</p>
 # Projeto final da Disciplina de Redes Multimídia cursada no período 2022.4.
 <p align="center">
   <img src="https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript" />
