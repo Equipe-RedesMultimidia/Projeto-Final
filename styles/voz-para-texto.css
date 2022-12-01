@@ -7,31 +7,30 @@
   font-family: 'Work Sans', sans-serif;;
 }
 
-form .campo{
+.campo{
   display: flex;
   margin-bottom: 30px;
   flex-direction: column;
 }
-form .campo label{
+.campo label{
   font-size: 18px;
   margin-bottom: 5px;
 }
-form :where(textarea, select, button){
+:where(button){
   outline: none;
   width: 100%;
   height: 100%;
   border: none;
   border-radius: 5px;
 }
-form .campo textarea{
+.campo textarea{
   resize: none;
   height: 110px;
   font-size: 15px;
   padding: 8px 10px;
   border: 1px solid #999;
 }
-
-form button{
+button{
   border: none;
   border-radius: 5px;
   color: #fff;
@@ -44,7 +43,6 @@ form button{
   transition: 0.3s ease;
 
 }
-form button:hover{
+button:hover{
   background: #000000;
 }
-

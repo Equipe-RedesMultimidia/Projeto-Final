@@ -6,7 +6,6 @@
   box-sizing: border-box;
   font-family: 'Work Sans', sans-serif;;
 }
-
 :where(textarea, select, button){
   outline: none;
   width: 100%;
