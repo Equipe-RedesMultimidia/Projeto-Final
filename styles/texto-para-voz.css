@@ -11,45 +11,45 @@
   font-weight: 500;
   text-align: center;
 }
-form .campo{
+.campo{
   display: flex;
   margin-bottom: 30px;
   flex-direction: column;
 }
-form .campo label{
+.campo p{
   font-size: 18px;
   margin-bottom: 5px;
 }
-form :where(textarea, select, button){
+:where(textarea, select, button){
   outline: none;
   width: 100%;
   height: 100%;
   border: none;
   border-radius: 5px;
 }
-form .campo textarea{
+.campo textarea{
   resize: none;
   height: 110px;
   font-size: 15px;
   padding: 8px 10px;
   border: 1px solid #999;
 }
-form .campo textarea::-webkit-scrollbar{
+.campo textarea::-webkit-scrollbar{
   width: 10px;
 }
-form .campo textarea::-webkit-scrollbar-track{
+.campo textarea::-webkit-scrollbar-track{
   background: #2184cf;
   border-radius: 100vw;
 }
-form .campo textarea::-webkit-scrollbar-thumb{
+.campo textarea::-webkit-scrollbar-thumb{
   background: #033257;
   border-radius: 100vw;
   border: .10em solid #2184cf;
 }
-form .campo textarea::-webkit-scrollbar-thumb:hover{
+.campo textarea::-webkit-scrollbar-thumb:hover{
   background: #000000;
 }
-form .seletor{
+.seletor{
   height: 47px;
   display: flex;
   align-items: center;
@@ -58,7 +58,7 @@ form .seletor{
   padding: 0 10px;
   border: 1px solid #999;
 }
-form .campo select{
+.campo select{
   font-size: 14px;
 }
 button{
