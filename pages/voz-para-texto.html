@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="utf-8">  
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../styles/voz-para-texto.css">
-        <title>Conversão de Voz para Texto</title>
-    </head>
-    <body>
-        <div class="topbar">
-            <div class="botao-voltar">
-                <button onclick="location.href='../index.html'">Voltar</button>
-            </div>
-            <header>Redes Multimídia</header>
+  <head>
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/voz-para-texto.css">
+    <title>Conversão de Voz para Texto</title>
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="botao-voltar">
+          <button onclick="location.href='../index.html'">Voltar</button>
+      </div>
+      <header>Redes Multimídia</header>
+    </div>
+    <div class="meio">
+      <div class="container">
+        <div class="campo centralizar">
+          <header>Voz para Texto</header>
+          <button id="speak">Clique para Ouvir</button>
         </div>
-        <div class="meio">
-            <div class="container">
-                <div class="campo centralizar">
-                    <header>Voz para Texto</header>
-                    <button id="speak">Clique para Ouvir</button>
-                </div>
-
-                <div class="campo">
-                    <p>Texto:</p>
-                    <p id="textarea"></p>
-                </div>
-            </div>
+        <div class="campo">
+          <p>Texto:</p>
+          <p id="textarea"></p>
         </div>
-    </body>
+      </div>
+    </div>
+    <div class="rodape centralizar">
+      <p>
+        Projeto Final da disciplina de Redes Multimídias Período 2022.4.
+      </p>
+    </div>
     <script src="../scripts/voz-para-texto.js"></script>
+  </body>
 </html>
