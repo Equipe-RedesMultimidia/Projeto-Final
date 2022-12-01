@@ -1,6 +1,6 @@
 # Projeto final da Disciplina de Redes Multimídia cursada no período 2022.4.
 <a src="https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)&nbsp">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)&nbsp" />
+  <img align="center" src="https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)&nbsp" />
 </a>
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)&nbsp;
