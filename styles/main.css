@@ -64,11 +64,11 @@ button:hover{
 .botao-voltar button{
   border: none;
   border-radius: 5px;
-  height: 52px;
   color: #fff;
   cursor: pointer;
-  width: 20vw;
-  margin-left: 20px;
+  width: 10vh;
+  height: 7vh;
+  margin: 30px;
   background: #b60404;
   transition: 0.3s ease;
 }
