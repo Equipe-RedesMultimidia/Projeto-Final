@@ -25,14 +25,10 @@ body{
   justify-content: center;
 }
 .container{
-  width: 370px;
-  padding: 25px 30px;
-  border-radius: 7px;
+  padding: 30px 30px;
+  border-radius: 10px;
   background: #fff;
   box-shadow: 7px 7px 20px rgba(0,0,0,0.05);
-}
-.container form{
-  margin: 35px 0 20px;
 }
 header{ 
   font-size: 28px;
@@ -46,7 +42,7 @@ header{
   margin-bottom: 30px;
   flex-direction: column;
 }
-.campo label{
+.campo p{
   font-size: 18px;
   margin-bottom: 5px;
 }
