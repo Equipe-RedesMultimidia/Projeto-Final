@@ -11,15 +11,6 @@
   font-weight: 500;
   text-align: center;
 }
-.campo{
-  display: flex;
-  margin-bottom: 30px;
-  flex-direction: column;
-}
-.campo p{
-  font-size: 18px;
-  margin-bottom: 5px;
-}
 :where(textarea, select, button){
   outline: none;
   width: 100%;
