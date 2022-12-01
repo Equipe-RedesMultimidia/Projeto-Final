@@ -1,7 +1,7 @@
 # Projeto final da Disciplina de Redes Multimídia cursada no período 2022.4.
-<a align="center">
+<p align="center">
   <img src="https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript" />
-</a>
+</p>
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)&nbsp;
 ![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat&logo=HTML5)&nbsp;
