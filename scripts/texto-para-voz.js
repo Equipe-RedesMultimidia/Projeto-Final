@@ -15,7 +15,7 @@ function voices(){
             let selected = "selected"
         }*/
 
-        let selected = voice.name.match(/.*português do Brasil.*/) ? "selected" : "";
+        let selected = voice.name.match(/.*português.*/) ? "selected" : "";
         let option = `<option value="${voice.name}" ${selected}>${voice.name} (${voice.lang})</option>`;
         voiceList.insertAdjacentHTML("beforeend", option);
     }
