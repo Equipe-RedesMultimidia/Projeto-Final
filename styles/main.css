@@ -96,7 +96,7 @@ button:hover{
 .rodape {
     font-size: 1.3rem;
     margin: 2rem;
-    color: #000000;
+    color: white;
 }
 .centralizar {
     display: flex;
