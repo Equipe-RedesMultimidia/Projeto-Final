@@ -4,9 +4,6 @@
 
 # Projeto final da Disciplina de Redes Multimídia cursada no período 2022.4.
 <p align="center">
-  <img src="https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript" />
-  <img src="https://img.shields.io/badge/-HTML-05122A?style=flat&logo=HTML5" />
-  <img src="https://img.shields.io/badge/-CSS-05122A?style=flat&logo=CSS3&logoColor=1572B6" />
   <img src="https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github" />
   <img src="https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat&logo=visual-studio-code&logoColor=007ACC" />
 </p>
