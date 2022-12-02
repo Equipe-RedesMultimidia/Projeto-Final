@@ -48,17 +48,25 @@
   font-size: 14px;
 }
 button{
-  border: none;
+  border: 2px solid black;
   border-radius: 5px;
-  height: 80px;
+
   color: #fff;
+  background: #2184cf;
   font-size: 17px;
   cursor: pointer;
+
+  height: 80px;
   width: 20vw;
-  margin-top: 10px;
-  background: #2184cf;
-  transition: 0.3s ease;
+  margin: 10px;
+  
+  box-shadow: 0.5rem 0.5rem black;
+  transition: 100ms ease-in;
 }
 button:hover{
   background: #000000;
+  box-shadow: 0vh 0vh black;
+
+  transform: translateX(0.5vh) translateY(0.5vh);
+  transition: 100ms ease-in;
 }
