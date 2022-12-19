@@ -1,10 +1,10 @@
-var speechRecognition = new webkitSpeechRecognition();
+var recog = new webkitSpeechRecognition();
 var final_transcript = "";
 
-speechRecognition.continuous = true;
-speechRecognition.interimResults = true;
+recog.continuous = true;
+recog.interimResults = true;
 
-speechRecognition.onresult = (event) => {
+recog.onresult = (event) => {
     let interim_transcript = "";
 
     for (let i = event.resultIndex; i < event.results.length; ++i) {
@@ -14,6 +14,7 @@ speechRecognition.onresult = (event) => {
             interim_transcript += event.results[i][0].transcript;
         }
     }
+
     document.querySelector("#final").innerHTML = final_transcript;
     document.querySelector("#interim").innerHTML = interim_transcript;
 };
@@ -23,11 +24,11 @@ var isListening = true;
 
 listenBtn.onclick = () => {
     if(isListening){
-        speechRecognition.start();
+        recog.start();
         listenBtn.innerText = "Pausar";
         isListening = false;
     }else{
-        speechRecognition.stop();
+        recog.stop();
         listenBtn.innerText = "Ouvir";
         isListening = true;
     }
