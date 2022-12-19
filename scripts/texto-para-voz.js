@@ -11,7 +11,7 @@ function voices(){
     }
 }
 
-synth.addEventListener("voiceschanged", () => voices());
+synth.addEventListener("voiceschanged", voices);
 
 const textarea = document.querySelector("textarea");
 speechBtn = document.querySelector(".botao-conversor");
