@@ -9,12 +9,6 @@ voices();
 
 function voices(){
     for(let voice of synth.getVoices()){
-        /*if(voice.name == "Google português do Brasil" ){
-            let selected = "selected"
-        } else{
-            let selected = "selected"
-        }*/
-
         let selected = voice.name.match(/.*português.*/) ? "selected" : "";
         let option = `<option value="${voice.name}" ${selected}>${voice.name} (${voice.lang})</option>`;
         voiceList.insertAdjacentHTML("beforeend", option);
@@ -24,7 +18,7 @@ function voices(){
 synth.addEventListener("voiceschanged", voices);
 
 function textToSpeech(text){
-    let utterance = new SpeechSynthesisUtterance(text);
+    let utterance = new SpeechSynthesisUtterance(text); //SpeechSynthesisUtterance para pausar o texto
     for(let voice of synth.getVoices()){
         if(voice.name === voiceList.value){
             utterance.voice = voice;
