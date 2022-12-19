@@ -1,13 +1,17 @@
 voiceList = document.querySelector("select");
 var synth = speechSynthesis;
 
-synth.addEventListener("voiceschanged", () => {
+voices();
+
+function voices(){
     for(let voice of synth.getVoices()){
         let selected = voice.name.match(/.*BR.*/) ? "selected" : "";
         let option = `<option value="${voice.name}" ${selected}>${voice.name} (${voice.lang})</option>`;
         voiceList.insertAdjacentHTML("beforeend", option);
     }
-});
+}
+
+synth.addEventListener("voiceschanged", () => voices());
 
 const textarea = document.querySelector("textarea");
 speechBtn = document.querySelector(".botao-conversor");
