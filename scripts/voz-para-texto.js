@@ -1,15 +1,36 @@
-var speak = document.querySelector("#speech-bt");
-var textarea = document.querySelector("#textarea");
-
 var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-var recognition = new SpeechRecognition();
+var recog = new SpeechRecognition();
+var final_transcript = "";
 
-speak.addEventListener('click', () => {
-    recognition.start();
-    textarea.innerHTML = 'ouvindo...';
-})
+recog.continuous = true;
+recog.interimResults = true;
 
-recognition.onresult = function (e) {
-    var transcript = e.results[0][0].transcript;
-    textarea.innerHTML = transcript;
-}
+recog.onresult = (event) => {
+    let interim_transcript = "";
+
+    for (let i = event.resultIndex; i < event.results.length; ++i) {
+        if (event.results[i].isFinal) {
+            final_transcript += event.results[i][0].transcript;
+        } else {
+            interim_transcript += event.results[i][0].transcript;
+        }
+    }
+
+    document.querySelector("#final").innerHTML = final_transcript;
+    document.querySelector("#interim").innerHTML = interim_transcript;
+};
+
+var listenBtn = document.querySelector("#speech-bt");
+var isListening = true;
+
+listenBtn.onclick = () => {
+    if(isListening){
+        recog.start();
+        listenBtn.innerText = "Pausar";
+        isListening = false;
+    }else{
+        recog.stop();
+        listenBtn.innerText = "Ouvir";
+        isListening = true;
+    }
+};
