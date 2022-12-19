@@ -5,7 +5,7 @@ voices();
 
 function voices(){
     for(let voice of synth.getVoices()){
-        let selected = voice.name.match(/.*BR.*/) ? "selected" : "";
+        let selected = voice.name.match(/.*português.*/) ? "selected" : "";
         let option = `<option value="${voice.name}" ${selected}>${voice.name} (${voice.lang})</option>`;
         voiceList.insertAdjacentHTML("beforeend", option);
     }
