@@ -14,7 +14,7 @@ speechBtn = document.querySelector(".botao-conversor");
 isSpeaking = true;
 
 function textToSpeech(text){
-    let utterance = new SpeechSynthesisUtterance(text); //SpeechSynthesisUtterance para pausar o texto
+    let utterance = new SpeechSynthesisUtterance(text);
     for(let voice of synth.getVoices()){
         if(voice.name === voiceList.value){
             utterance.voice = voice;
@@ -38,7 +38,7 @@ speechBtn.addEventListener("click", (e) =>{
             isSpeaking = true;
             speechBtn.innerText = "Resumo";
         }
-        setInterval(()=>{   //para ficar verificando se ainda está falando, se não estiver falando
+        setInterval(()=>{
             if(!synth.speaking && !isSpeaking){
                 isSpeaking = true;
                 speechBtn.innerText = "Converter para Voz";
