@@ -3,7 +3,7 @@ var synth = speechSynthesis;
 
 synth.addEventListener("voiceschanged", () => {
     for(let voice of synth.getVoices()){
-        let selected = voice.name.match(/.*português.*/) ? "selected" : "";
+        let selected = voice.name.match(/.*pt-BR.*/) ? "selected" : "";
         let option = `<option value="${voice.name}" ${selected}>${voice.name} (${voice.lang})</option>`;
         voiceList.insertAdjacentHTML("beforeend", option);
     }

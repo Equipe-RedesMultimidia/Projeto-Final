@@ -9,20 +9,19 @@ if(verifica_mobile()){
 
     var speak = document.querySelector("#speech-bt");
     var textarea = document.querySelector("#textarea");
-
     var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-    var recognition = new SpeechRecognition();
+    var recog = new SpeechRecognition();
 
     speak.addEventListener('click', () => {
-        recognition.start();
+        recog.start();
         textarea.innerHTML = 'ouvindo...';
     })
 
-    recognition.onresult = function (e) {
+    recog.onresult = function (e) {
         var transcript = e.results[0][0].transcript;
         textarea.innerHTML = transcript;
     }
-    
+
 }else{
     console.log("Estou no PC!");
 
